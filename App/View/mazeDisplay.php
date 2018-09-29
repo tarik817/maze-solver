@@ -57,7 +57,7 @@
                     $buttonValue = ' ';
                     ?>
                     <?php foreach ($playerPath as $key => $value) : ?>
-                        <?php if ($value[$x] === $y) {
+                        <?php if (isset($value[$x]) && $value[$x] === $y) {
                             $color = 'yellow';
                             $buttonValue = " $key ";
                         } ?>
